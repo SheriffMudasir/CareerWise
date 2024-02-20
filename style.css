@@ -3355,6 +3355,24 @@ body{
 	height: 100%;
 	width: 100%;
 }
+/* Google Map container styling for responsiveness */
+.contact-us .map-container {
+	position: relative;
+	overflow: hidden;
+	padding-top: 56.25%;
+	/* Maintains a 16:9 Aspect Ratio */
+	height: 0;
+}
+
+.contact-us .map-container iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* End Google Map container styling for responsiveness */
 /*=========================
    End Contact Us CSS
 ===========================*/
@@ -3887,33 +3905,37 @@ body{
 /*=========================
 	Start Footer CSS
 ===========================*/
-.footer{
-	position:relative;
+.footer {
+	position: relative;
 }
-.footer .footer-top{
-	padding:100px 0px;
-	position:relative;
-	background:#1A76D1;
+.footer .footer-top {
+	padding: 100px 0px;
+	position: relative;
+	background: #1A76D1;
 }
-.footer .footer-top:before{
-	position:absolute;
-	content:"";
-	left:0;
-	top:0;
-	height:100%;
-	width:100%;
-	background:#000;
-	opacity:0.1;
+.footer .footer-top:before {
+	position: absolute;
+	content: "";
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background: #000;
+	opacity: 0.1;
 }
-.footer .single-footer .social{
-	margin-top:25px;
+.footer .single-footer {
+	margin-top: 25px;
 }
-.footer .single-footer .social li{
-	display:inline-block;
-	margin-right:10px;
+.footer .single-footer .social {
+	margin-top: 25px;
 }
-.footer .single-footer .social li:last-child{
-	margin-right:0px;
+.footer .single-footer .social li {
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.footer .single-footer .social li:last-child {
+	margin-right: 0px;
 }
 .footer .single-footer .social li a {
 	height: 34px;
@@ -3925,23 +3947,27 @@ body{
 	padding: 0;
 	border-radius: 100%;
 	display: block;
-	color:#fff;
+	color: #fff;
 	font-size: 16px;
 }
-.footer .single-footer .social li a:hover{
-	color:#1A76D1;
-	background:#fff;
-	border-color:transparent;
+.footer .single-footer .social li a:hover {
+	color: #1A76D1;
+	background: #fff;
+	border-color: transparent;
 }
-.footer .single-footer.f-link li a i{
-	margin-right:10px;
+.footer .single-footer .social li a i {
+	margin-right: 10px;
 }
-.footer .single-footer.f-link li{
-	display:block;
-	margin-bottom:12px;
+.footer .single-footer.f-link li a i {
+	margin-right: 10px;
 }
-.footer .single-footer.f-link li:last-child{
-	margin:0;
+.footer .single-footer.f-link li {
+	display: block;
+	margin-bottom: 12px;
+}
+
+.footer .single-footer.f-link li:last-child {
+	margin: 0;
 }
 .footer .single-footer.f-link li a {
 	display: block;
@@ -3952,20 +3978,20 @@ body{
 	transition: all 0.4s ease;
 	font-weight: 400;
 }
-.footer .single-footer.f-link li a:hover{
-	padding-left:8px;
+.footer .single-footer.f-link li a:hover {
+	padding-left: 8px;
 }
-.footer .single-footer h2{
-	color:#fff;
-	font-size:20px;
-	font-weight:600;
-	text-transform:capitalize;
-	margin-bottom:40px;
-	padding-bottom:20px;
-	text-transform:capitalize;
-	position:relative;
+.footer .single-footer h2 {
+	color: #fff;
+	font-size: 20px;
+	font-weight: 600;
+	text-transform: capitalize;
+	margin-bottom: 40px;
+	padding-bottom: 20px;
+	text-transform: capitalize;
+	position: relative;
 }
-.footer .single-footer h2::before{
+.footer .single-footer h2::before {
 	position: absolute;
 	content: "";
 	left: 0;
@@ -3974,32 +4000,36 @@ body{
 	width: 50px;
 	background: #fff;
 }
-.footer .single-footer .time-sidual{
-	margin-top:15px;
+.footer .single-footer .time-sidual {
+	margin-top: 15px;
 }
-.footer .single-footer .time-sidual{
-	overflow:hidden;
+.footer .single-footer .time-sidual {
+	overflow: hidden;
 }
+
 .footer .single-footer .time-sidual li {
 	display: block;
 	color: #fff;
 	width: 100%;
 	margin-bottom: 5px;
 }
-.footer .single-footer .time-sidual li span{
-	display:inline-block;
+.footer .single-footer .time-sidual li span {
+	display: inline-block;
+	float: right;
 }
+
 .footer .single-footer .day-head .time {
 	font-weight: 400;
 	float: right;
 }
-.footer .single-footer p{
-	color:#fff;
+.footer .single-footer p {
+	color: #fff;
 }
-.footer .single-footer .newsletter-inner{
-	margin-top:20px;
-	position:relative;
+.footer .single-footer .newsletter-inner {
+	margin-top: 20px;
+	position: relative;
 }
+
 .footer .single-footer .newsletter-inner input {
 	background: transparent;
 	border: 1px solid #fff;
@@ -4011,6 +4041,7 @@ body{
 	padding-left: 18px;
 	padding-right: 70px;
 	display: inline-block;
+	float: left;
 	border-radius: 0px;
 	-webkit-transition: all 0.4s ease;
 	-moz-transition: all 0.4s ease;
@@ -4018,27 +4049,30 @@ body{
 	font-weight: 400;
 	border-radius: 5px;
 }
-.footer .single-footer .newsletter-inner input:hover{
+.footer .single-footer .newsletter-inner input:hover {
 	padding-left: 22px;
 }
+
 .footer input::-webkit-input-placeholder {
-    opacity: 1;
-    color: #fff !important;
+	opacity: 1;
+		color: #fff !important;
 }
 
 .footer input::-moz-placeholder {
-    opacity: 1;
-    color: #fff !important;
+	opacity: 1;
+		color: #fff !important;
 }
 
 .footer input::-ms-input-placeholder {
-    opacity: 1;
-    color: #fff !important;
+	opacity: 1;
+		color: #fff !important;
 }
+
 .footer input::input-placeholder {
-    opacity: 1;
-    color: #fff !important;
+	opacity: 1;
+		color: #fff !important;
 }
+
 .footer .single-footer .newsletter-inner .button {
 	position: absolute;
 	right: 0;
@@ -4060,29 +4094,311 @@ body{
 	color: #1A76D1;
 	font-size: 25px;
 }
-.footer .single-footer .newsletter-inner .button i{
-	-webkit-transition:all 0.4s ease;
-	-moz-transition:all 0.4s ease;
-	transition:all 0.4s ease;
+.footer .single-footer .newsletter-inner .button i {
+	-webkit-transition: all 0.4s ease;
+	-moz-transition: all 0.4s ease;
+	transition: all 0.4s ease;
 }
-.footer .single-footer .newsletter-inner .button:hover i{
-	color:#2C2D3F;
+.footer .single-footer .newsletter-inner .button:hover i {
+	color: #2C2D3F;
 }
-.footer .copyright{
-	background:#1A76D1;
-	padding:25px 0px 25px 0px;
-	text-align:center;
+.footer .copyright {
+	background: #1A76D1;
+	padding: 25px 0px 25px 0px;
+	text-align: center;
 }
-.footer .copyright .copyright-content p{
-	color:#fff;
+.footer .copyright .copyright-content p {
+	color: #fff;
 }
-.footer .copyright .copyright-content p a{
-	color:#fff;
-	font-weight:400;
-	text-decoration:underline;
-	display:inline-block;
-	margin-left:4px;
+.footer .copyright .copyright-content p a {
+	color: #fff;
+	font-weight: 400;
+	text-decoration: underline;
+	display: inline-block;
+	margin-left: 4px;
 }
+
 /*=========================
 	End Footer CSS
 ===========================*/
+/* uccess stories */
+.success-stories {
+	padding: 60px 0;
+	background-color: #f9f9f9;
+}
+
+.section-title h2 {
+	margin-bottom: 20px;
+	font-size: 28px;
+}
+
+.single-testimonial {
+	margin-bottom: 30px;
+	background: #fff;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+	padding: 20px;
+	border-radius: 10px;
+	transition: all 0.3s ease;
+}
+
+.single-testimonial:hover {
+	transform: translateY(-5px);
+}
+
+.testimonial-image img {
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	margin-bottom: 20px;
+}
+
+.testimonial-content p {
+	font-style: italic;
+	color: #555;
+}
+
+.testimonial-content .name {
+	font-weight: bold;
+	margin-top: 15px;
+	display: block;
+	color: #333;
+}
+
+.btn {
+	background-color: #007bff;
+	color: #fff;
+	padding: 10px 20px;
+	border-radius: 5px;
+	transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+	background-color: #0056b3;
+	color: #fff;
+}
+
+/* End of success strory */
+
+/* Networking Events Slider Styling */
+.networking-events-slider {
+	background-color: #f8f9fa;
+	/* Light background for a fresh look */
+	padding: 60px 0;
+}
+
+.networking-events-slider .section-title {
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+.networking-events-slider .section-title h2 {
+	color: #007bff;
+	/* Primary color for headings */
+	font-size: 30px;
+	/* Larger font size for impact */
+	font-weight: 700;
+}
+
+.networking-events-slider .section-title p {
+	font-size: 16px;
+	/* Readable font size for descriptions */
+	color: #6c757d;
+	/* Muted color for text */
+}
+
+.networking-events-slider .single-slider {
+	background-size: cover;
+	background-position: center center;
+	min-height: 400px;
+	/* Adequate height for visibility */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	margin: 20px 0;
+	/* Spacing between sliders */
+}
+
+.networking-events-slider .single-slider .slider-content {
+	background-color: rgba(13, 110, 253, 0.7);
+	/* Brand color with opacity for readability */
+	color: #ffffff;
+	/* White text for contrast */
+	padding: 30px;
+	border-radius: 8px;
+	/* Rounded corners for a modern look */
+	text-align: center;
+	max-width: 80%;
+}
+
+.networking-events-slider .slider-content h1 {
+	font-size: 24px;
+	/* Emphasized title size */
+	margin-bottom: 20px;
+}
+
+.networking-events-slider .slider-content p {
+	font-size: 14px;
+	margin-bottom: 30px;
+	/* Spacing for readability */
+}
+
+.networking-events-slider .btn {
+	background-color: #007bff;
+	/* Primary button color */
+	color: #ffffff;
+	padding: 10px 30px;
+	border-radius: 5px;
+	text-decoration: none;
+	transition: background-color 0.3s ease;
+}
+
+.networking-events-slider .btn:hover {
+	background-color: #0056b3;
+	/* Darker shade on hover */
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+	.networking-events-slider .single-slider {
+		min-height: 300px;
+		/* Smaller height on mobile */
+	}
+
+	.networking-events-slider .slider-content h1 {
+		font-size: 20px;
+		/* Adjusted for smaller screens */
+	}
+
+	.networking-events-slider .slider-content p {
+		font-size: 12px;
+		/* Smaller font size for mobile readability */
+	}
+}
+
+.white-text {
+	color: #ffffff;
+	/* Sets the text color to white */
+}
+
+/* End of Networking Events Slider Styling */
+/* Body of About Us */
+.about-us {
+	background-color: #f4f4f4;
+	padding: 60px 0;
+}
+
+.section-title {
+	text-align: center;
+	color: #007bff;
+	margin-bottom: 40px;
+}
+
+.about-description,
+.mission-vision p {
+	color: #666;
+	line-height: 1.8;
+	margin-bottom: 20px;
+}
+
+.mission-vision h3 {
+	color: #333;
+	margin-top: 30px;
+}
+
+.img-fluid {
+	max-width: 100%;
+	height: auto;
+	border-radius: 5px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+	.about-us .container {
+		padding: 0 15px;
+	}
+
+	.about-us .row>div {
+		margin-bottom: 30px;
+	}
+}
+
+/* End Body of About Us */
+
+/* Services Section CSS */
+.career-wise-services {
+	background-color: #f9f9f9;
+	padding: 60px 0;
+}
+
+.career-wise-services .section-title h2 {
+	color: #333;
+	margin-bottom: 20px;
+}
+
+.career-wise-services .section-title p {
+	color: #666;
+	margin-bottom: 40px;
+}
+
+.career-wise-services .service-item {
+	background-color: #fff;
+	padding: 30px;
+	border-radius: 10px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	text-align: center;
+	margin-bottom: 30px;
+	transition: all 0.3s ease;
+}
+
+.career-wise-services .service-item:hover {
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.career-wise-services .service-item i {
+	font-size: 48px;
+	color: #007bff;
+	margin-bottom: 20px;
+}
+
+.career-wise-services .service-item h4 {
+	font-size: 20px;
+	color: #333;
+	margin-bottom: 15px;
+}
+
+.career-wise-services .service-item p {
+	font-size: 14px;
+	color: #666;
+}
+
+/* End Services Section CSS */
+
+/* FAQ Section CSS Adjustments */
+.career-wise-faq .faq-accordion .card-header {
+	background-color: #007bff;
+	/* Adjust background color to match the theme */
+	border-bottom: 1px solid #0056b3;
+}
+
+.career-wise-faq .faq-accordion .btn-link {
+	color: #ffffff;
+	/* Set question text color to white */
+	font-weight: bold;
+	/* Optional: Makes the text bold */
+}
+
+.career-wise-faq .faq-accordion .btn-link:hover,
+.career-wise-faq .faq-accordion .btn-link:focus {
+	color: #ffffff;
+	/* Keep text color white on hover/focus */
+	background-color: #0056b3;
+	/* Optional: Change background color on hover/focus */
+}
+
+.career-wise-faq .faq-accordion .card-body {
+	background-color: #f9f9f9;
+	/* Light background for the answer for better readability */
+	color: #333;
+	/* Dark text color for the answer */
+}

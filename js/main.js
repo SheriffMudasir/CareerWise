@@ -329,3 +329,26 @@ Version:	1.1
 	
 	
 })(jQuery);
+
+
+
+
+document.querySelectorAll('.faq-accordion .card-header').forEach(header => {
+    header.addEventListener('click', function() {
+        const accordionItemBody = header.nextElementSibling;
+        if(!accordionItemBody.classList.contains('collapse')) {
+            accordionItemBody.classList.add('collapse');
+        } else {
+            accordionItemBody.classList.remove('collapse');
+        }
+    });
+});
+
+document.querySelectorAll('.faq-accordion .card').forEach(item => {
+    item.addEventListener('mouseleave', function() {
+        const accordionItemBody = item.querySelector('.collapse');
+        if(accordionItemBody) {
+            accordionItemBody.classList.add('collapse');
+        }
+    });
+});
